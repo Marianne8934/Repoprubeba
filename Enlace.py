@@ -16,7 +16,7 @@ cursor = conn.cursor()
 cursor.execute("INSERT INTO tarea2 (nombre, carnet) VALUES (%s, %s);", ('Marianne', '202000656'))
 
 # Ejecutar una consulta SELECT
-cursor.execute("SELECT * FROM redes;")
+cursor.execute("SELECT * FROM tarea2;")
 rows = cursor.fetchall()
 
 # Mostrar los resultados
