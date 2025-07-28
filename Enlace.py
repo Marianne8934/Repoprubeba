@@ -13,10 +13,10 @@ conn = psycopg2.connect(
 cursor = conn.cursor()
 
 # Insertar datos en la tabla
-cursor.execute("INSERT INTO tarea2 (nombre, carnet) VALUES (%s, %s);", ('Marianne', '202000656'))
+cursor.execute("INSERT INTO tarea (nombre, carnet) VALUES (%s, %s);", ('Marianne', '202000656'))
 
 # Ejecutar una consulta SELECT
-cursor.execute("SELECT * FROM tarea2;")
+cursor.execute("SELECT * FROM tarea;")
 rows = cursor.fetchall()
 
 # Mostrar los resultados
